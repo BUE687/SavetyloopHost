@@ -4,7 +4,7 @@ SavetyLoopHost
 
 To maintain the robots integrity even if the developed software contains bugs a savety loop was introduced. It on the hardware side it consists of a ESP32 D1-mini dev board that consits of a microcontroller with a WLAN interface. It can be programmed in the arduino framework, that makes the development very easy. The robot is disabled by intercepting the enable line of the motor drivers. A client device controlling the system can be introduced by any other process that has access to the network. The overall design is depicted in the following figure. The comunication is done using **UDP** to be robust against network issues. 
 
-![Arcitecture](./Architecture_savety_loop.svg)
+<img src="./Architecture_savety_loop.svg" style="background:white">
 
 The software on the ESP32 represents a state machine that has three states *init*, *run* and *halt*. 
 
